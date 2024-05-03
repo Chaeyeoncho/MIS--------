@@ -23,19 +23,67 @@
         background-color: #ffffff; /*green*/
         color: #555555;
       }
+
+      .bg-4 {
+        background-color: black;
+        color: white;
+      }
       .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
       }
+
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+      }
+
+      .navbar-nav li a:hover {
+        color: #1abc9c !important;
+      }
     </style>
   </head>
   <body>
-    <div class="container-fluid bg-1 text-center">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Me</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#who">WHO</a></li>
+            <li><a href="#what">WHAT</a></li>
+            <li><a href="#where">WHERE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center" id="who">
       <h3>Who Am I?</h3>
-      <img src="bird.jpg" class="img-circle" alt="Bird" />
+      <img
+        src="bird.jpg"
+        class="img-responisve img-circle"
+        alt="Bird"
+        style="display: inline"
+      />
       <h3>I'm an adventure</h3>
     </div>
-    <div class="container-fluid bg-2 text-center">
+    <div class="container-fluid bg-2 text-center" id="what">
       <h3>What AM I?</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et ante
@@ -51,16 +99,55 @@
         <span class="glyphicon glyphicon-search"></span> Search</a
       >
     </div>
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center" id="where">
       <h3>Where To Find Me?</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
-        feugiat nisl. Ut vel mattis ligula. Cras odio purus, hendrerit ut nisl
-        lacinia, facilisis blandit nulla. Donec hendrerit est est, ac ornare
-        purus faucibus in. Proin lobortis mattis scelerisque. Donec gravida
-        risus accumsan enim rutrum faucibus. Donec quis viverra lectus. Ut
-        semper consequat aliquam.
-      </p>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
+            feugiat nisl.
+          </p>
+          <img
+            src="bird1.jpg"
+            alt="Image"
+            style="width: 100%"
+            class="img-responsive"
+          />
+        </div>
+
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
+            feugiat nisl.
+          </p>
+          <img
+            src="bird2.jpg"
+            alt="Image"
+            style="width: 100%"
+            class="img-responsive"
+          />
+        </div>
+
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
+            feugiat nisl.
+          </p>
+          <img
+            src="bird3.jpg"
+            alt="Image"
+            style="width: 100%"
+            class="img-responsive"
+          />
+        </div>
+      </div>
     </div>
+    <footer class="container-fluid bg-4 text-center">
+      <p>
+        Boostrap Made By Chae-yeon Cho<br /><a href="http://seoultech.ac.kr">
+          Seoul National University of Science and Technology
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
